@@ -7,14 +7,10 @@ class Solution(object):
         :type n: int
         :rtype: None Do not return anything, modify nums1 in-place instead.
         """
-        i=0
         while(len(nums1)>m):
             nums1.pop()
-            i+=1
-        j=0
         while(len(nums2)>n):
             nums2.pop()
-            j+=1
         nums1.extend(nums2)
         nums1.sort()
         return nums1

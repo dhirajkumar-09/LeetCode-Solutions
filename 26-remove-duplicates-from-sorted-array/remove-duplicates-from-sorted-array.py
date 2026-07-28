@@ -6,7 +6,7 @@ class Solution(object):
         l2 = len(nums_sort)
 
         total = l1 - l2
-
-        nums[:] = nums_sort + ["_"] * total
+        
+        nums[:]= nums_sort + ["_"] * total
 
         return l2

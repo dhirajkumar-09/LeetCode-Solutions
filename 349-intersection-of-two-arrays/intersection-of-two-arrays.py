@@ -5,7 +5,6 @@ class Solution(object):
         :type nums2: List[int]
         :rtype: List[int]
         """
-        nums1_set=set(nums1)
-        ans=[x for x in nums1_set if x in nums2]
-        return ans
-        
+        set1 = set(nums1)
+        set2 = set(nums2)
+        return list(set1.intersection(set2))

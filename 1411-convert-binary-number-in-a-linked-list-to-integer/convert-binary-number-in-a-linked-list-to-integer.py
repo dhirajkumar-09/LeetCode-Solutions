@@ -10,7 +10,8 @@ class Solution(object):
         :rtype: int
         """
         result=0
-        while head:
-            result=result*2+head.val
-            head=head.next
+        current=head
+        while current:
+            result=result*2+current.val
+            current=current.next
         return result

@@ -3,7 +3,7 @@ class Solution:
         arr1=[nums[0]]
         arr2=[nums[1]]
         for i in range(2,len(nums)):
-            if arr1[len(arr1)-1]>arr2[len(arr2)-1]: 
+            if arr1[-1]>arr2[-1]: 
                 arr1.append(nums[i])
             else:
                 arr2.append(nums[i])
